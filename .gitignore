@@ -1,0 +1,9 @@
+# File hasil kompilasi Java
+*.class
+
+# Folder hasil build
+out/
+target/
+
+# File sistem macOS
+.DS_Store
