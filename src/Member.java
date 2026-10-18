@@ -26,4 +26,23 @@ public class Member {
         this.tanggalDaftar = tanggalDaftar;
         this.jenisPaket = jenisPaket;
     }
+
+    /**
+     * Mengambil nama member.
+     *
+     * @return nama member
+     */
+    public String getNama() {
+        return nama;
+    }
+
+    /**
+     * Mengambil nomor telepon member.
+     *
+     * @return nomor telepon member
+     */
+    public String getNoTelepon() {
+        return noTelepon;
+    }
+
 }
