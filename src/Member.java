@@ -37,12 +37,46 @@ public class Member {
     }
 
     /**
+     * Mengubah nama jika tidak kosong.
+     *
+     * @param nama nama baru member
+     */
+    public void setNama(String nama) {
+        if (nama != null && !nama.trim().isEmpty()) {
+            this.nama = nama;
+        } else {
+            System.out.println(
+                "Nama tidak boleh kosong atau hanya berisi spasi."
+            );
+        }
+    }
+
+    /**
      * Mengambil nomor telepon member.
      *
      * @return nomor telepon member
      */
     public String getNoTelepon() {
         return noTelepon;
+    }
+
+    /**
+     * Mengubah nomor telepon jika memenuhi ketentuan.
+     *
+     * @param noTelepon nomor telepon baru member
+     */
+    public void setNoTelepon(String noTelepon) {
+        if (noTelepon != null
+                && noTelepon.matches("[0-9]+")
+                && noTelepon.startsWith("0")
+                && noTelepon.length() >= MIN_PANJANG_TELEPON) {
+            this.noTelepon = noTelepon;
+        } else {
+            System.out.println(
+                "Nomor telepon harus berupa angka, dimulai dengan 0, "
+                + "dan minimal 10 digit."
+            );
+        }
     }
 
 }
