@@ -21,10 +21,11 @@ public class Member {
      */
     public Member(String nama, String noTelepon,
                   String tanggalDaftar, String jenisPaket) {
-        this.nama = nama;
-        this.noTelepon = noTelepon;
-        this.tanggalDaftar = tanggalDaftar;
-        this.jenisPaket = jenisPaket;
+        // DIPANGGIL LEWAT SETTER SESUAI ATURAN MODUL
+        setNama(nama);
+        setNoTelepon(noTelepon);
+        setTanggalDaftar(tanggalDaftar);
+        setJenisPaket(jenisPaket);
     }
 
     /**
@@ -66,17 +67,43 @@ public class Member {
      * @param noTelepon nomor telepon baru member
      */
     public void setNoTelepon(String noTelepon) {
-        if (noTelepon != null
-                && noTelepon.matches("[0-9]+")
-                && noTelepon.startsWith("0")
-                && noTelepon.length() >= MIN_PANJANG_TELEPON) {
-            this.noTelepon = noTelepon;
-        } else {
-            System.out.println(
-                "Nomor telepon harus berupa angka, dimulai dengan 0, "
-                + "dan minimal 10 digit."
-            );
-        }
+        this.noTelepon = noTelepon;
+    }
+
+    /**
+     * Mengambil tanggal pendaftaran member.
+     *
+     * @return tanggal pendaftaran member
+     */
+    public String getTanggalDaftar() {
+        return tanggalDaftar;
+    }
+
+    /**
+     * Mengubah tanggal pendaftaran.
+     *
+     * @param tanggalDaftar tanggal pendaftaran baru
+     */
+    public void setTanggalDaftar(String tanggalDaftar) {
+        this.tanggalDaftar = tanggalDaftar;
+    }
+
+    /**
+     * Mengambil jenis paket member.
+     *
+     * @return jenis paket member
+     */
+    public String getJenisPaket() {
+        return jenisPaket;
+    }
+
+    /**
+     * Mengubah jenis paket member.
+     *
+     * @param jenisPaket jenis paket baru
+     */
+    public void setJenisPaket(String jenisPaket) {
+        this.jenisPaket = jenisPaket;
     }
 
 }
