@@ -67,7 +67,17 @@ public class Member {
      * @param noTelepon nomor telepon baru member
      */
     public void setNoTelepon(String noTelepon) {
-        this.noTelepon = noTelepon;
+        if (noTelepon != null
+                && noTelepon.matches("[0-9]+")
+                && noTelepon.startsWith("0")
+                && noTelepon.length() >= MIN_PANJANG_TELEPON) {
+            this.noTelepon = noTelepon;
+        } else {
+            System.out.println(
+                "Nomor telepon harus berupa angka, dimulai dengan 0, "
+                + "dan minimal 10 digit."
+            );
+        }
     }
 
     /**
