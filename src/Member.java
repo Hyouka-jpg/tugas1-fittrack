@@ -95,7 +95,14 @@ public class Member {
      * @param tanggalDaftar tanggal pendaftaran baru
      */
     public void setTanggalDaftar(String tanggalDaftar) {
-        this.tanggalDaftar = tanggalDaftar;
+        if (tanggalDaftar != null
+                && tanggalDaftar.matches("\\d{2}-\\d{2}-\\d{4}")) {
+            this.tanggalDaftar = tanggalDaftar;
+        } else {
+            System.out.println(
+                "Tanggal harus menggunakan format dd-MM-yyyy."
+            );
+        }
     }
 
     /**
