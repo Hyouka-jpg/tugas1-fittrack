@@ -120,7 +120,15 @@ public class Member {
      * @param jenisPaket jenis paket baru
      */
     public void setJenisPaket(String jenisPaket) {
-        this.jenisPaket = jenisPaket;
+        if ("Basic".equals(jenisPaket)
+                || "Premium".equals(jenisPaket)
+                || "VIP".equals(jenisPaket)) {
+            this.jenisPaket = jenisPaket;
+        } else {
+            System.out.println(
+                "Jenis paket harus Basic, Premium, atau VIP."
+            );
+        }
     }
 
 }
