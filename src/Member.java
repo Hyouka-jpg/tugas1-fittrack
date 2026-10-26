@@ -142,4 +142,17 @@ public class Member {
         }
     }
 
+    /**
+     * Menampilkan seluruh data member dalam bentuk teks berlabel.
+     *
+     * @return data member dengan label yang jelas
+     */
+    @Override
+    public String toString() {
+        return "Nama: " + nama
+                + ", No. Telepon: " + noTelepon
+                + ", Tanggal Daftar: " + tanggalDaftar
+                + ", Jenis Paket: " + jenisPaket;
+    }
+
 }
