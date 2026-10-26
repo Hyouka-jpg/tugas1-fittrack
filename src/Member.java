@@ -29,6 +29,17 @@ public class Member {
     }
 
     /**
+     * Membuat member dengan paket Basic secara otomatis.
+     *
+     * @param nama nama lengkap member
+     * @param noTelepon nomor telepon member
+     * @param tanggalDaftar tanggal pendaftaran member
+     */
+    public Member(String nama, String noTelepon, String tanggalDaftar) {
+        this(nama, noTelepon, tanggalDaftar, "Basic");
+    }
+
+    /**
      * Mengambil nama member.
      *
      * @return nama member
