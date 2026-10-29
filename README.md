@@ -33,6 +33,7 @@ tugas1-fittrack/
 │   └── ☕ TesFitTrack.java
 ├── ⚙️ .gitignore
 └── 📝 README.md
+```
 
 ## Nilai Default Validasi
 
@@ -44,17 +45,25 @@ tugas1-fittrack/
 | **Jenis Paket** | Hanya menerima paket: `Basic`, `Premium`, atau `VIP` | `"Basic"` |
 
 ## Cara Menjalankan Program
+
 ### 1. Melalui Command Line (Terminal)
 1. Clone Repository ini:
 ```bash
 git clone [https://github.com/Hyouka-jpg/tugas1-fittrack.git](https://github.com/Hyouka-jpg/tugas1-fittrack.git)
+Lalu:
 cd tugas1-fittrack
+```
+
 Kompilasi program Java:
-Bash
+
+```Bash
 javac src/*.java
+```
+
 Jalankan Program:
-Bash
+```Bash
 java -cp src TesFitTrack
+```
 
 2. Melalui IntelliJ IDEA
 Buka aplikasi IntelliJ IDEA.
