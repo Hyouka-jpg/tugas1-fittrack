@@ -74,6 +74,7 @@ Klik ikon Run (segitiga hijau) di sebelah method main atau tekan Shift + F10.
 
 ## Contoh Output (keluaran)
 
+```
 ======================================
  SISTEM KEANGGOTAAN GYM FITTRACK
 ======================================
@@ -98,3 +99,4 @@ Jenis paket harus Basic, Premium, atau VIP.
 5. Nama: Eka, No. Telepon: 0000000000, Tanggal Daftar: 10-10-2026, Jenis Paket: Basic
 
 === PENGUJIAN TAHAP 1 SELESAI ===
+```
